@@ -31,7 +31,7 @@ function ContactForm() {
   };
 
   return (
-    <>
+    <div id="contact">
       <div className="overlay">
         <form className="form" ref={form} onSubmit={sendEmail}>
           <h1 className="contact-text">CONTACT ME</h1>
@@ -81,7 +81,7 @@ function ContactForm() {
           </a>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -6,10 +6,11 @@ import ReactIcon from "./icon/react.svg";
 import JavascriptIcon from "./icon/javascript.svg";
 import CssIcon from "./icon/css.svg";
 import HtmlIcon from "./icon/html.svg";
+import { Link } from "react-scroll";
 
 function HeroSection() {
   return (
-    <div className="hero-section">
+    <div className="hero-section" id="hero">
       <div className="main-cont">
         <span className="added-text">Hi! I am </span>
         <h1 className="name-text">Duy Linh VU</h1>
@@ -20,9 +21,15 @@ function HeroSection() {
           <a className="cv-btn" href={cv} target="_blank">
             Resume
           </a>
-          <a href="/#/contact" className="contact-btn">
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className="contact-btn"
+          >
             Email me
-          </a>
+          </Link>
         </div>
       </div>
       <div className="cube-cont">

@@ -1,21 +1,50 @@
 import "./Nav.css";
+import { Link } from "react-scroll";
 
 function Nav() {
   return (
     <div className="nav-box">
       <div className="nav">
-        <a href="/#/" className="nav-link">
+        <Link
+          to="hero"
+          spy={true}
+          smooth={true}
+          duration={500}
+          href="/#/"
+          className="nav-link"
+        >
           About
-        </a>
-        <a href="/#/project" className="nav-link">
+        </Link>
+        <Link
+          to="project"
+          spy={true}
+          smooth={true}
+          duration={500}
+          href="/#/project"
+          className="nav-link"
+        >
           Project
-        </a>
-        <a href="/#/experience" className="nav-link">
+        </Link>
+        <Link
+          to="experience"
+          spy={true}
+          smooth={true}
+          duration={500}
+          href="/#/experience"
+          className="nav-link"
+        >
           Experience
-        </a>
-        <a href="/#/contact" className="nav-link">
+        </Link>
+        <Link
+          to="contact"
+          spy={true}
+          smooth={true}
+          duration={500}
+          href="/#/contact"
+          className="nav-link"
+        >
           Contact
-        </a>
+        </Link>
       </div>
     </div>
   );

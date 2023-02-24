@@ -11,6 +11,7 @@ function Project() {
 
   function toggleAboutSamurai() {
     setAboutSamurai(!aboutSamurai);
+    console.log("sam");
   }
 
   const [aboutSudoku, setAboutSudoku] = useState(false);
@@ -20,7 +21,7 @@ function Project() {
   }
 
   return (
-    <div className="project">
+    <div className="project" id="project">
       {aboutSamurai && <SamuraiInfo toggleAboutSamurai={toggleAboutSamurai} />}
       {aboutSudoku && <SudokuInfo toggleAboutSudoku={toggleAboutSudoku} />}
       <div className="project-box">

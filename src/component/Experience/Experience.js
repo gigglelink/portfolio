@@ -1,13 +1,20 @@
 import "./Experience.css";
 import { RotatingLines } from "react-loader-spinner";
+import { Link } from "react-scroll";
 
 function Experience() {
   return (
-    <div className="experience">
+    <div className="experience" id="experience">
       <p className="experience-text">
-        <a href="/#/contact" className="btn">
+        <Link
+          to="contact"
+          spy={true}
+          smooth={true}
+          duration={500}
+          className="btn"
+        >
           HIRE
-        </a>{" "}
+        </Link>{" "}
         <p>TO SEE YOUR NAME HERE</p>
       </p>
       <div className="empty-box">
