@@ -20,7 +20,7 @@ function HeroSection() {
           <a className="cv-btn" href={cv} target="_blank">
             Resume
           </a>
-          <a href="/contact" className="contact-btn">
+          <a href="/#/contact" className="contact-btn">
             Email me
           </a>
         </div>
