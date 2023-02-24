@@ -5,7 +5,7 @@ function Experience() {
   return (
     <div className="experience">
       <p className="experience-text">
-        <a href="/#/contact" className="btn">
+        <a href="/contact" className="btn">
           HIRE
         </a>{" "}
         <p>TO SEE YOUR NAME HERE</p>
