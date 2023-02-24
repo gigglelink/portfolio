@@ -1,0 +1,38 @@
+.nav-box {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.nav {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  position: fixed;
+  background-color: #212529;
+  border-bottom: 3px solid #94d82d;
+  border-left: 3px solid #94d82d;
+  border-right: 3px solid #94d82d;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  z-index: 1;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 18px;
+  color: #94d82d;
+  background-color: #212529;
+  margin: 0.5rem 0.5rem;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 426px) {
+  .nav-link {
+    margin: 0.5rem 2rem;
+  }
+}
